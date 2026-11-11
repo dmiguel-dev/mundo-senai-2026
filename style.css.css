@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap');
+
+:root {
+  --senai-azul-escuro: #0A1F44;
+  --senai-azul-principal: #17428F;
+  --senai-laranja: #F26B21;
+  --senai-texto: #FFFFFF;
+}
+
+/* Seção principal */
+.secao-senai {
+  font-family: 'Sora', sans-serif;
+  background-color: var(--senai-azul-escuro);
+  color: var(--senai-texto);
+  padding: 2.5rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  box-shadow: 0 8px 24px rgba(10, 31, 68, 0.3);
+}
+
+.subtitulo-senai {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--senai-texto);
+  border-left: 5px solid var(--senai-laranja);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.midia-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.2rem;
+}
+
+.frame-apresentacao {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.legenda-readme {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #E9EEF5;
+  margin-bottom: 1.5rem;
+}
+
+.btn-abrir-senai {
+  background: var(--senai-laranja);
+  color: var(--senai-texto);
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-abrir-senai:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(242, 107, 33, 0.4);
+}
+
+/* Estilização do Dialog Overlap */
+.dialog-overlay {
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+  max-width: 520px;
+  width: 90%;
+  background: #FFFFFF;
+  color: #0A1F44;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.dialog-overlay::backdrop {
+  background: rgba(10, 31, 68, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.dialog-conteudo {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.dialog-conteudo h4 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--senai-azul-principal);
+}
+
+.dialog-conteudo p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #2B3038;
+}
+
+.btn-entendido {
+  align-self: flex-end;
+  background-color: var(--senai-azul-principal);
+  color: #FFFFFF;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-entendido:hover {
+  background-color: #0f2d63;
+}
